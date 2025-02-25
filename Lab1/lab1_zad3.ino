@@ -1,5 +1,3 @@
-// C++ code
-//
 const int ledPins[]={12,11,10,9};
 const int rgbPins[]={8,7,6};
 const int btnPins[]={1,2,3,4};
