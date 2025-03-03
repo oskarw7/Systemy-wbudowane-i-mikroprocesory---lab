@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 288.6, "left": -365.4, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": 84.4, "left": 111.2, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": 44.22,
+      "left": -248.48,
+      "attrs": { "digits": "4", "colon": "1", "common": "anode" }
+    }
+  ],
+  "connections": [
+    [ "uno:A0", "keypad1:R1", "yellow", [ "v163.1", "h368.6" ] ],
+    [ "uno:13", "keypad1:R2", "cyan", [ "v355.2", "h250.4" ] ],
+    [ "uno:12", "keypad1:R3", "magenta", [ "v364.8", "h250.4" ] ],
+    [ "uno:11", "keypad1:R4", "blue", [ "v374.4", "h250.4" ] ],
+    [ "uno:A3", "keypad1:C2", "black", [ "v220.7", "h176.9" ] ],
+    [ "uno:A2", "keypad1:C3", "red", [ "v211.1", "h196.15" ] ],
+    [ "uno:A1", "keypad1:C4", "orange", [ "v201.5", "h215.4" ] ],
+    [ "uno:A4", "keypad1:C1", "orange", [ "v230.3", "h157.9" ] ],
+    [ "sevseg1:E", "uno:6", "#8f4814", [ "v0" ] ],
+    [ "sevseg1:D", "uno:5", "red", [ "v27.96", "h48", "v144", "h-32.6" ] ],
+    [ "sevseg1:DP", "uno:9", "orange", [ "v8.76", "h-57.6", "v172.8" ] ],
+    [ "sevseg1:C", "uno:4", "gold", [ "v75.96", "h5.7" ] ],
+    [ "sevseg1:G", "uno:8", "green", [ "v47.16", "h-48.4" ] ],
+    [ "sevseg1:DIG4", "uno:A1", "magenta", [ "v18.36", "h67.2", "v385.68", "h-80.7" ] ],
+    [ "sevseg1:DIG1", "uno:A4", "gold", [ "v-67.2", "h-134.39", "v547.2", "h197.4" ] ],
+    [ "sevseg1:A", "uno:2", "violet", [ "v-57.6", "h-134.4", "v268.8", "h178.3" ] ],
+    [ "sevseg1:F", "uno:7", "white", [ "v-48", "h-134.4", "v268.8", "h121.2" ] ],
+    [ "sevseg1:DIG2", "uno:A3", "magenta", [ "v-38.4", "h-134.4", "v489.6", "h159.1" ] ],
+    [ "sevseg1:DIG3", "uno:A2", "limegreen", [ "v-28.8", "h-134.4", "v489.6", "h140" ] ],
+    [ "sevseg1:B", "uno:3", "yellow", [ "v-19.2", "h-134.4", "v249.6", "h130.4" ] ],
+    [ "sevseg1:CLN", "uno:10", "cyan", [ "v-9.6", "h-134.4", "v249.6", "h47.3" ] ]
+  ],
+  "dependencies": {}
+}
