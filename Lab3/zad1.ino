@@ -37,4 +37,3 @@ void loop(){
   readString();
   writeString();
 }
-X

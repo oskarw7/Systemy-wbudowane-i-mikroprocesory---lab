@@ -61,7 +61,7 @@ void setup(){
   Serial.println("Awaiting commands...");
   
   LCD.begin(16,2);
-  LCD.createChar(1, mesh);
+  LCD.createChar(1, mesh)
   LCD.clear();
   
   LCD.setCursor(0,0);
